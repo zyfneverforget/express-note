@@ -1,0 +1,28 @@
+{
+  "name": "node-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "webpack": "webpack --config=src/webpack.config.js",
+    "watch": "onchange 'src/**/*.js' 'src/**/*.less' -- npm run webpack"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "css-loader": "^0.27.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "onchange": "^5.0.2",
+    "sequelize": "^4.41.2",
+    "sqlite3": "^4.0.4",
+    "style-loader": "^0.14.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1",
+    "less-loader": "^3.0.0",
+    "less": "^2.3.1"
+  }
+}
